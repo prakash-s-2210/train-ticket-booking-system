@@ -17,7 +17,7 @@ const ViewTicketReceipt = ({ onClose, ticketReceiptDetails }) => {
     async function getAllTickets() {
       try {
         const respObj = await fetch(
-          `http://localhost:8080/train/availableSeats`,
+          `https://train-ticket-booking-system-urp8.onrender.com/train/availableSeats`,
           {
             method: "GET",
           }
@@ -46,7 +46,7 @@ const ViewTicketReceipt = ({ onClose, ticketReceiptDetails }) => {
   const deleteTicket = async (tkt) => {
     try {
       const respObj = await fetch(
-        `http://localhost:8080/train/ticket/${tkt._id}`,
+        `https://train-ticket-booking-system-urp8.onrender.com/train/ticket/${tkt._id}`,
         {
           method: "DELETE",
         }
@@ -109,7 +109,7 @@ const ViewTicketReceipt = ({ onClose, ticketReceiptDetails }) => {
 
     try {
       const respObj = await fetch(
-        `http://localhost:8080/train/ticket`,
+        `https://train-ticket-booking-system-urp8.onrender.com/train/ticket`,
         {
           method: "PUT",
           headers: {

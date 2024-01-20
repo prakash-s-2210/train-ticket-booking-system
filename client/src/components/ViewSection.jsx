@@ -11,7 +11,7 @@ const ViewSection = ({ onClose }) => {
   useEffect(() => {
     async function getAllTickets() {
       try {
-        const respObj = await fetch(`http://localhost:8080/train/tickets`, {
+        const respObj = await fetch(`https://train-ticket-booking-system-urp8.onrender.com/train/tickets`, {
           method: "GET",
         });
 

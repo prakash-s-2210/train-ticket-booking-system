@@ -20,7 +20,7 @@ const BookTicket = ({ onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const respObj = await fetch("http://localhost:8080/train/bookTicket", {
+      const respObj = await fetch("https://train-ticket-booking-system-urp8.onrender.com/train/bookTicket", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
